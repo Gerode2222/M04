@@ -6,6 +6,17 @@ body {
     color: #333;
     text-align: center;
     padding: 20px;
+    transition: background 0.3s, color 0.3s;
+}
+
+.light-theme {
+    background: white;
+    color: black;
+}
+
+.dark-theme {
+    background: black;
+    color: white;
 }
 
 header {

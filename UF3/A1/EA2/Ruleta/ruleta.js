@@ -85,7 +85,12 @@ function drawRouletteWheel() {
     } 
 
     //Arrow
+    if (body.classList.contains("dark-theme")) {
+      ctx.fillStyle = "white";
+    } 
+    else {
     ctx.fillStyle = "black";
+    }
     ctx.beginPath();
     ctx.moveTo(250 - 4, 250 - (outsideRadius + 5));
     ctx.lineTo(250 + 4, 250 - (outsideRadius + 5));
@@ -128,6 +133,8 @@ function stopRotateWheel() {
   var text = options[index]
   ctx.fillText(text, 250 - ctx.measureText(text).width / 2, 250 + 10);
   ctx.restore();
+  let sound = new Audio("sound3.mp3");
+  sound.play();
 }
 
 function easeOut(t, b, c, d) {
