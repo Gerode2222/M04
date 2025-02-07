@@ -1,6 +1,6 @@
 import { ReadNameFile } from "./names.js";
 
-var options = ["", "","", "", ""];
+var options = ["", "","", ""];
 
 var startAngle = 0;
 var arc = Math.PI / (options.length / 2);

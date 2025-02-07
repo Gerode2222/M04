@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temporitzador</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    
+    <section id="temporitzador">
+        <h2>Rellotge Temporitzador</h2>
+        <p class="digitalFont" id="current-time"></p>
+        <input type="time" id="end-time">
+        <input type="number" id="countdown" placeholder="Temps en segons">
+        <button id="start-timer">Inicia Temporitzador</button>
+        <p class="digitalFont" id="time-remaining"></p>
+        <select id="alarm-sound">
+            <option value="sound1.mp3">So 1</option>
+            <option value="sound2.mp3">So 2</option>
+        </select>
+    </section>
+    
+    <script src="theme.js"></script>
+    <script src="temporitzador.js"></script>
+</body>
+</html>
